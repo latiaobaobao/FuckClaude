@@ -29,6 +29,10 @@ export const ui = {
     'sponsors.label': 'Sponsors',
     'sponsors.cta': 'Want to be listed here?',
 
+    'cnModels.label': 'Chinese AI models',
+    'cnModels.slogan': 'Chinese models are simply better',
+    'cnModels.cta': 'Check it out',
+
     'band.low.title': 'Low risk',
     'band.low.desc': '🐶You are not a “Claude China user”🐶',
     'band.medium.title': 'Medium risk',
@@ -111,6 +115,10 @@ export const ui = {
 
     'sponsors.label': '赞助商',
     'sponsors.cta': '想显示在下方？',
+
+    'cnModels.label': '国产大模型',
+    'cnModels.slogan': '模型还是中国的好',
+    'cnModels.cta': '去看看',
 
     'band.low.title': '低风险',
     'band.low.desc': '🐶你不是「Claude 中国用户」🐶',

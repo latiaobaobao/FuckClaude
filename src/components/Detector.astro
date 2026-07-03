@@ -5,6 +5,7 @@ import LangToggle from './LangToggle.astro';
 import ScoreRing from './ScoreRing.astro';
 import Mascot from './Mascot.astro';
 import Sponsors from './Sponsors.astro';
+import CnModels from './CnModels.astro';
 import Footer from './Footer.astro';
 
 interface Props {
@@ -71,6 +72,8 @@ const home = lang === 'zh' ? '/zh/' : '/';
       </div>
     </div>
   </section>
+
+  <CnModels lang={lang} />
 
   <section id="scan-sec" aria-labelledby="scan-title">
     <div class="section-head">

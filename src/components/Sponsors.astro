@@ -24,6 +24,8 @@ const t = useTranslations(lang);
               href={sponsor.url}
               target="_blank"
               rel="sponsored noopener noreferrer"
+              data-ga-event="sponsor_click"
+              data-ga-id={sponsor.id}
             >
               <img
                 class="sponsor__logo"

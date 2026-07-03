@@ -64,5 +64,5 @@ export const SPONSORS: Sponsor[] = [
       zh: '免费使用',
       en: 'Use for free',
     },
-  },
+  }
 ];
