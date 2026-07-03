@@ -240,16 +240,129 @@ const jsonLd = {
         color: var(--text);
       }
 
+      /* ---------- sponsors ---------- */
+      .sponsors {
+        background: var(--bg-soft);
+        border-bottom: 1px solid var(--border);
+      }
+      .sponsors__inner {
+        padding-block: 6px 7px;
+      }
+      .sponsors__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .sponsors__label {
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted-2);
+      }
+      .sponsors__cta {
+        font-size: 0.74rem;
+        color: var(--muted);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .sponsors__cta:hover {
+        color: var(--accent-strong);
+      }
+      .sponsors__list {
+        list-style: none;
+        margin: 1px 0 0;
+        padding: 0;
+      }
+      .sponsors__list li + li {
+        border-top: 1px dashed var(--border-strong);
+      }
+      .sponsor {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 5px 0;
+        color: var(--muted);
+      }
+      .sponsor:hover {
+        text-decoration: none;
+      }
+      .sponsor__logo {
+        flex: none;
+        display: block;
+        height: 26px;
+        width: auto;
+      }
+      .sponsor__text {
+        flex: 1;
+        margin: 0;
+        font-size: 0.82rem;
+        line-height: 1.4;
+      }
+      .sponsor__text strong {
+        color: var(--text);
+        font-weight: 700;
+        margin-right: 3px;
+      }
+      .sponsor:hover .sponsor__text strong {
+        color: var(--accent-strong);
+      }
+      .sponsor__btn {
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 4px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent-strong);
+        font-size: 0.76rem;
+        font-weight: 650;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .sponsor:hover .sponsor__btn {
+        background: var(--accent);
+        color: #fff;
+      }
+      .sponsor__btn svg {
+        width: 11px;
+        height: 11px;
+      }
+      @media (max-width: 640px) {
+        .sponsor {
+          display: grid;
+          grid-template-columns: 1fr auto;
+          gap: 3px 10px;
+        }
+        .sponsor__logo {
+          grid-row: 1;
+          grid-column: 1;
+          justify-self: start;
+        }
+        .sponsor__btn {
+          grid-row: 1;
+          grid-column: 2;
+          justify-self: end;
+        }
+        .sponsor__text {
+          grid-row: 2;
+          grid-column: 1 / -1;
+        }
+      }
+
       /* ---------- hero ---------- */
       .hero {
         text-align: center;
-        padding: 52px 0 8px;
+        padding: 32px 0 8px;
       }
       .hero h1 {
         font-family: var(--serif);
         font-size: clamp(2rem, 5.2vw, 3.1rem);
         line-height: 1.16;
-        margin: 0 auto 14px;
+        margin: 0 auto;
         max-width: 22ch;
         letter-spacing: -0.01em;
         font-weight: 700;
@@ -258,31 +371,25 @@ const jsonLd = {
         color: var(--accent-strong);
         font-style: italic;
       }
-      .hero p.sub {
-        color: var(--muted);
-        max-width: 58ch;
-        margin: 0 auto;
-        font-size: 1.05rem;
-      }
       .trust {
         list-style: none;
-        margin: 20px auto 0;
+        margin: 16px auto 0;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 8px;
+        gap: 7px;
       }
       .trust li {
         display: inline-flex;
         align-items: center;
-        gap: 7px;
-        font-size: 0.83rem;
+        gap: 6px;
+        font-size: 0.78rem;
         color: var(--muted);
         border: 1px solid var(--border);
         border-radius: 999px;
-        padding: 5px 13px;
-        background: var(--surface);
+        padding: 4px 11px;
+        background: var(--bg);
       }
       .trust li::before {
         content: '';
@@ -297,7 +404,7 @@ const jsonLd = {
         display: inline-flex;
         align-items: center;
         gap: 9px;
-        margin-bottom: 20px;
+        margin-bottom: 14px;
         padding: 7px 16px;
         border-radius: 999px;
         font-size: 0.84rem;
@@ -329,8 +436,8 @@ const jsonLd = {
 
       /* ---------- score panel ---------- */
       .panel {
-        margin: 26px auto 0;
-        padding: 34px 26px 30px;
+        margin: 18px auto 0;
+        padding: 28px 24px 24px;
         background: var(--surface);
         border: 1px solid var(--border);
         border-radius: var(--radius);
@@ -440,7 +547,7 @@ const jsonLd = {
 
       /* ---------- big scan button ---------- */
       .scan-btn {
-        margin-top: 22px;
+        margin-top: 18px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -857,10 +964,10 @@ const jsonLd = {
       /* ---------- responsive ---------- */
       @media (max-width: 560px) {
         .hero {
-          padding-top: 34px;
+          padding-top: 22px;
         }
         .panel {
-          padding: 26px 16px 24px;
+          padding: 24px 16px 20px;
         }
         .scan-row__desc {
           display: none;

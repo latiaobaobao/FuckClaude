@@ -4,6 +4,7 @@ import { SIGNALS } from '../config/signals';
 import LangToggle from './LangToggle.astro';
 import ScoreRing from './ScoreRing.astro';
 import Mascot from './Mascot.astro';
+import Sponsors from './Sponsors.astro';
 import Footer from './Footer.astro';
 
 interface Props {
@@ -47,6 +48,8 @@ const home = lang === 'zh' ? '/zh/' : '/';
   </div>
 </header>
 
+<Sponsors lang={lang} />
+
 <main class="wrap">
   <section class="hero">
     <div class="credit">
@@ -55,13 +58,6 @@ const home = lang === 'zh' ? '/zh/' : '/';
     </div>
 
     <h1>{t('hero.title')}</h1>
-    <p class="sub">{t('hero.subtitle')}</p>
-
-    <ul class="trust">
-      <li>{t('hero.badge.local')}</li>
-      <li>{t('hero.badge.noUpload')}</li>
-      <li>{t('hero.badge.openSource')}</li>
-    </ul>
 
     <div class="panel">
       <div class="panel__main">

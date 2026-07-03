@@ -21,12 +21,13 @@ export const ui = {
     'credit': 'Built with Claude Fable 5',
 
     'hero.title': 'Are you a Claude “China user”?',
-    'hero.subtitle':
-      'One click scans the locale signals in your browser and tells you whether Claude Code would flag — and ban — you as a China user.',
     'hero.badge.local': '100% local scan',
     'hero.badge.noUpload': 'Results never uploaded',
     'hero.badge.openSource': 'Open source',
     'hero.scoreOutOf': '/ 100',
+
+    'sponsors.label': 'Sponsors',
+    'sponsors.cta': 'Want to be listed here?',
 
     'band.low.title': 'Low risk',
     'band.low.desc': '🐶You are not a “Claude China user”🐶',
@@ -103,12 +104,13 @@ export const ui = {
     'credit': '此网站使用 Claude Fable 5 开发',
 
     'hero.title': '你是「Claude 中国用户」吗',
-    'hero.subtitle':
-      '一键扫描浏览器环境中的地域信号,告诉你是否会被 Claude Code 标记并封号为中国用户。',
     'hero.badge.local': '纯本地检测',
     'hero.badge.noUpload': '结果零上传',
     'hero.badge.openSource': '开源代码',
     'hero.scoreOutOf': '/ 100',
+
+    'sponsors.label': '赞助商',
+    'sponsors.cta': '想显示在下方？',
 
     'band.low.title': '低风险',
     'band.low.desc': '🐶你不是「Claude 中国用户」🐶',
